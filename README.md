@@ -7,7 +7,7 @@ A detailed description is available in the paper published in Plant Phenomics [L
 
 ## 1. Getting started
 ### 1.1. Downloading and installing Leaf Analyzer
-Please go to the Releases and download the latest version of the installers and install the software according to the instructions:
+Please go to the [Releases](https://github.com/squashking/Leaf-Analyzer/releases)  and download the latest version of the installers and install the software according to the instructions:
 
 <table border="1" cellspacing="0" cellpadding="6">
   <tr><th>Operation System</th><th>Installation</th></tr>
