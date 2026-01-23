@@ -40,12 +40,15 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word
   <li>In Leaf Analyzer, enter the exact pattern dimensions in Settings → Pattern.</li>
 </ul>
 
-<p align="center">
-  <img src="Docs/Images/Leaf_Analyzer_Pattern_illustration.png" alt="Leaf Analyzer pattern details" height=500>
-  <img src="Docs/Images/Pattern_tab.png" alt="Pattern dimensions setting"  height=500>
-  <br>
-  <em>Figure 1. (a) Pattern specs. (b) Pattern tab on the Settings panel.</em>
-</p>
+<table>
+  <tr>
+    <td align="center"><img src="Docs/Images/Leaf_Analyzer_Pattern_illustration.png" alt="Leaf Analyzer pattern details" width=300 height=350></td>
+    <td align="center"><img src="Docs/Images/Pattern_tab.png" alt="Pattern dimensions setting" width=300 height=350></td>
+  </tr>
+</table>
+<p align="center"><em>Figure 2. (a) Pattern specs. (b) Pattern tab on the Settings panel.</em></p>
+
+
 
 ### 1.4 If your images were taken **without** the Leaf Analyzer pattern
 
