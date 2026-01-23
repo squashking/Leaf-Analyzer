@@ -40,6 +40,8 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word
   <li>In Leaf Analyzer, enter the exact pattern dimensions in Settings → Pattern.</li>
 </ul>
 
+> **Note:** Leaves must be put within the Region of Interest (Fig2.a). Any objects beyond the cut-off line will be disregarded.
+
 <table>
   <tr>
     <td align="center"><img src="Docs/Images/Leaf_Analyzer_Pattern_illustration.png" alt="Leaf Analyzer pattern details" width=300 height=350></td>
