@@ -1,46 +1,69 @@
 # Leaf_Analyzer
-Leaf Analyzer is an open-source, GUI software tool for automated measurement of leaf traits such as area, dimensions, perimeter, count, percentage of damage induced by disease or herbivory etc. The software is written in Matlab and has been built as standalone software, so you do not need a Matlab license to run the software. The software is currently available in Windows, Linux and Mac.
+Leaf Analyzer is an open-source GUI tool for automated measurement of leaf traits—area, dimensions, perimeter, count, and percent damage (e.g., herbivory/disease). The application is implemented in MATLAB and distributed as a standalone program (no MATLAB license required). Installers are available for Windows, Linux, and macOS.
 
-A detailed description is available in the paper published in Plant Phenomics [Leaf Analyzer: A Fully Automated and Open-Source Tool for High-Throughput Leaf Trait Measurement](https://authors.elsevier.com/sd/article/S2643-6515(25)00151-7).
+A detailed description is available in our article in Plant Phenomics:
+[Leaf Analyzer: A Fully Automated and Open-Source Tool for High-Throughput Leaf Trait Measurement](https://authors.elsevier.com/sd/article/S2643-6515(25)00151-7).
 
-![alt text](Docs/Images/UI_Screenshot.png)
+
+<p align="center">
+  <img src="Docs/Images/UI_Screenshot.png" alt="Leaf Analyzer UI" width="700">
+  <br>
+  <em>Figure 1. Leaf Analyzer UI.</em>
+</p>
 
 ## 1. Getting started
 ### 1.1. Downloading and installing Leaf Analyzer
-Please go to the [Releases](https://github.com/squashking/Leaf-Analyzer/releases)  and download the latest version of the installers and install the software according to the instructions:
+Download the latest release from [Releases](https://github.com/squashking/Leaf-Analyzer/releases)  and install the software according to the instructions:
 
 <table border="1" cellspacing="0" cellpadding="6">
-  <tr><th>Operation System</th><th>Installation</th></tr>
-  <tr><td>Windows</td><td>Double click: LeafAnalyzerInstaller2.5_Windows.exe</td></tr>
-  <tr><td>Linux</td><td>sudo ./ LeafAnalyzerInstaller2.5_Linux.install</td></tr>
+  <tr><th>Operation System</th><th>Installation</th><th>Launching</th></tr>
+  <tr><td>Windows</td><td>Double click: LeafAnalyzerInstaller2.5_Windows.exe</td><td>Open via Start Menu → Leaf Analyzer (or the desktop shortcut, if created).</td></tr>
+  <tr><td>Linux</td><td>sudo ./ LeafAnalyzerInstaller2.5_Linux.install</td><td>➢ cd /usr/Leaf_Analyzer/application <br>
+➢ ./run_Leaf_analyzer.sh /usr/local/MATLAB/MATLAB_Runtime/R2025a/</td></tr>
   <tr><td>Mac OS</td><td>First unzip LeafAnalyzerInstaller2.5_Mac.zip, and then 
 Control-click the unzipped file
-(LeafAnalyzerInstaller2.5_Mac.app) → Open</td></tr>
+(LeafAnalyzerInstaller2.5_Mac.app) → Open</td><td>Open via Applications → Leaf Analyzer (or Spotlight).</td></tr>
 </table>
 
-### 1.2. Launching the Leaf Analyzer
-<table border="1" cellspacing="0" cellpadding="6">
-<tr><th>
-<p>Windows</p>
-<p style="font-weight: normal;">Open via Start Menu → Leaf Analyzer (or the desktop shortcut, if created).</p>
 
-<p>Linux</p>
-<p style="font-weight: normal;">➢ cd /usr/Leaf_Analyzer/application <br>
-➢ ./run_Leaf_analyzer.sh /usr/local/MATLAB/MATLAB_Runtime/R2025a/</p>
+### 1.2. Test Leaf Analyzer with images
+Leaf Analyzer requires images captured with the Leaf Analyzer calibration pattern. For quick testing, use the datasets in [Datasets](Datasets/). 
 
-<p>Mac OS</p>
-<p style="font-weight: normal;">Open via Applications → Leaf Analyzer (or Spotlight).</p>
+To try your own images, first capture them with the pattern (see next section). See [Capturing images with the Leaf Analyzer pattern](#13-capture-images-with-the-leaf-analyzer-pattern) 
 
-</th></tr>
-</table>
+### 1.3. Capture images with the Leaf Analyzer pattern
+The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word template for custom sizes. PDFs were generated in Inkscape for high precision.
 
-### 1.2. Testing Leaf Analyzer with images
-Leaf Analyzer requires leaf images taken with our custom-designed pattern. For testing, you can use the image datasets provided in this repository [Datasets](Datasets/). To test your own images, see [Capturing images with Leaf Analyzer pattern](#12-capturing-images-with-leaf-analyzer-pattern) 
+<ul>
+  <li>Print PDFs at 100% scale on a standard office printer.</li>
+  <li>If you customize the pattern (Word template), ensure printed dimensions are accurate.</li>
+  <li>In Leaf Analyzer, enter the exact pattern dimensions in Settings → Pattern.</li>
+</ul>
 
-### 1.2. Capturing images with Leaf Analyzer pattern
-In the [Patterns](Patterns/) folder, you can find a few pdf pattern files of different sizes (from A4 to A1) as well as a word file of the pattern template. The pdf pattern files were designed and generated using Inkscape for high precision. To use these files, you just need to print them on an office printer at 100% scale. You can also use the Word file to customize your own pattern size. When you run Leaf Analyzer, please remember to input the correct pattern dimensions on the _Settings_ panel under the _Pattern_ tab.
+<p align="center">
+  <img src="Docs/Images/Leaf_Analyzer_Pattern_illustration.png" alt="Leaf Analyzer pattern details" height=500>
+  <img src="Docs/Images/Pattern_tab.png" alt="Pattern dimensions setting"  height=500>
+  <br>
+  <em>Figure 1. (a) Pattern specs. (b) Pattern tab on the Settings panel.</em>
+</p>
 
-### 1.3. Video Tutorials
+### 1.4 If your images were taken **without** the Leaf Analyzer pattern
+
+If your images don’t include the Leaf Analyzer calibration pattern but have a **white (or light) background** and an **independent scale reference** (e.g., a ruler), you can follow the steps:
+
+1. **Superimpose AprilTags**
+   - Overlay the four **AprilTags** from the Leaf Analyzer pattern onto the image (maintaining correct geometry).
+   - Then run Leaf Analyzer to obtain measurements in metric units.
+
+2. **Measure in pixels and convert**
+   - Run Leaf Analyzer to measure traits in **pixels**.
+   - Convert to metric units using a known-length object in the image (by multiplying a constant factor in the output spreadsheet file).
+
+> **Tip:** The scale factor of area-based traits is the square of the factor for length-based traits.
+
+
+
+### 1.5. Video Tutorials
 Leaf morphological trait measurement demo
  [youtube link](https://youtu.be/liucWnU8v48)
 
