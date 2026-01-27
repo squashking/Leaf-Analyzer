@@ -106,7 +106,7 @@ Where: Settings → Advanced → Fill holes (check/uncheck).
     <td align="center"><img src="Docs/Images/Setting_fill_holes.png" alt="Fill holes button" width=400 height=250></td>
   </tr>
 </table>
-<p align="center"><em>Figure 4. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
+<p align="left"><em>Figure 4. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
 
 ### 1.6.3 Enable Perspective correction
 
@@ -121,4 +121,4 @@ Where: Settings → Advanced → Perspective correction.
     <td align="center"><img src="Docs/Images/Perspective_correction.png" alt="Fill holes button" width=400 height=250></td>
   </tr>
 </table>
-<p align="center"><em>Figure 5. (a) Image captured at an oblique angle. (b) Segmentation using default settings (perspective correction off). (c) Segmentation with Perspective correction enabled. (d) Location of the Perspective correction control in the Settings panel. </em></p>
+<p align="left"><em>Figure 5. (a) Image captured at an oblique angle. (b) Segmentation using default settings (perspective correction off). (c) Segmentation with Perspective correction enabled. (d) Location of the Perspective correction control in the Settings panel. </em></p>
