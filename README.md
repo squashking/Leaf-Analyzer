@@ -91,7 +91,7 @@ Where: Settings → Advanced → Min leaf area.
 </table>
 <p align="left"><em>Figure 3. (a) Original RGB image with large size variation among leaves. (b) Two very small leaves are missed with the default Min leaf area threshold. (c) All leaves are segmented after lowering the threshold to 1%. (d) Location of the Min leaf area control in the Settings panel.</em></p>
 
-### 1.6.2 Toggle Fill holes
+#### 1.6.2 Toggle Fill holes
 By default, Leaf Analyzer performs hole filling during post-processing to improve object completeness. This could end up with undesired results (Fig. 4b). If so, disable the option to preserve internal holes (Fig. 4c).
 Where: Settings → Advanced → Fill holes (check/uncheck).
 
@@ -105,7 +105,7 @@ Where: Settings → Advanced → Fill holes (check/uncheck).
 </table>
 <p align="left"><em>Figure 4. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
 
-### 1.6.3 Enable Perspective correction
+#### 1.6.3 Enable Perspective correction
 
 Perspective correction is off by default. If images were captured at a skewed angle (not normal to the pattern plane), enabling this option can improve geometric accuracy (Fig. 5c).
 Where: Settings → Advanced → Perspective correction.
