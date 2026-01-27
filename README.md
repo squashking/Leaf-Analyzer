@@ -58,7 +58,6 @@ If your images don’t include the Leaf Analyzer calibration pattern but have a 
 
 1. **Superimpose AprilTags**
    - Overlay the four **AprilTags** from the Leaf Analyzer pattern onto the image (maintaining correct geometry).
-   - Then run Leaf Analyzer to obtain measurements in metric units.
 
 2. **Measure in pixels and convert**
    - Run Leaf Analyzer to measure traits in **pixels**.
@@ -76,4 +75,50 @@ Leaf morphological trait measurement demo
  [youtube link](https://youtu.be/od3qdbkg00o)
 
 
+### 1.6. Tweak default settings (if needed)
 
+The default settings work in most cases. In the scenarios below, you may wish to adjust them.
+
+#### 1.6.1 Adjust the min leaf area threshold
+
+Leaf Analyzer applies a minimum leaf area threshold to speed up processing and suppress background noise (e.g., dirt). By default, this threshold is 5% of the largest leaf area in the image. If some small leaves are not segmented because they are much smaller than the largest leaf (Fig. 3b), lower the threshold to include them (e.g., 1%; Fig. 3c).
+Where: Settings → Advanced → Min leaf area.
+
+<table>
+  <tr>
+    <td align="center"><img src="Docs/Images/Tweak_min_area_RGB.jpg" alt="Tweak_min_area_RGB" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Tweak_min_area_mask_org.png" alt="Tweak_min_area_RGB - original results" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Tweak_min_area_mask_updated.png" alt="Tweak_min_area_RGB - updated results" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Settings_min_area.png" alt="Set min area threshold" width=400 height=250></td>
+  </tr>
+</table>
+<p align="left"><em>Figure 3. (a) Original RGB image with large size variation among leaves. (b) Two very small leaves are missed with the default Min leaf area threshold. (c) All leaves are segmented after lowering the threshold to 1%. (d) Location of the Min leaf area control in the Settings panel.</em></p>
+
+### 1.6.2 Toggle Fill holes
+By default, Leaf Analyzer performs hole filling during post-processing to improve object completeness. This could end up with undesired results (Fig. 4b). If so, disable the option to preserve internal holes (Fig. 4c).
+Where: Settings → Advanced → Fill holes (check/uncheck).
+
+<table>
+  <tr>
+    <td align="center"><img src="Docs/Images/Fill_holes_RGB.jpg" alt="Fill_holes_RGB" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Fill_holes_mask_org.png" alt="Fill_holes - original results" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Fill_holes_mask_updated.png" alt="Fill holes - updated results" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Setting_fill_holes.png" alt="Fill holes button" width=400 height=250></td>
+  </tr>
+</table>
+<p align="center"><em>Figure 4. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
+
+### 1.6.3 Enable Perspective correction
+
+Perspective correction is off by default. If images were captured at a skewed angle (not normal to the pattern plane), enabling this option can improve geometric accuracy (Fig. 5c).
+Where: Settings → Advanced → Perspective correction.
+
+<table>
+  <tr>
+    <td align="center"><img src="Datasets/Petiole-Pro-comparision/LA_Petiole_Acc.jpeg" alt="Fill_holes_RGB" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Perspective_correction_masked_RGB.png" alt="Fill_holes - original results" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Perspective_correction_masked_RGB_updated.png" alt="Fill holes - updated results" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Perspective_correction.png" alt="Fill holes button" width=400 height=250></td>
+  </tr>
+</table>
+<p align="center"><em>Figure 5. (a) Image captured at an oblique angle. (b) Segmentation using default settings (perspective correction off). (c) Segmentation with Perspective correction enabled. (d) Location of the Perspective correction control in the Settings panel. </em></p>
