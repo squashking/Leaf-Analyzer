@@ -56,11 +56,8 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word
 
 If your images don’t include the Leaf Analyzer calibration pattern but have a **white (or light) background** and an **independent scale reference** (e.g., a ruler), you can follow the steps:
 
-1. **Superimpose AprilTags**
    - Overlay the four **AprilTags** from the Leaf Analyzer pattern onto the image (maintaining correct geometry).
-
-2. **Measure in pixels and convert**
-   - Run Leaf Analyzer to measure traits in **pixels**.
+   - Run Leaf Analyzer to measure traits in **pixels**. (Settings → Output → Dimension unit → pixel.)
    - Convert to metric units using a known-length object in the image (by multiplying a constant factor in the output spreadsheet file).
 
 > **Tip:** The scale factor of area-based traits is the square of the factor for length-based traits.
