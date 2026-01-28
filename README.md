@@ -32,7 +32,7 @@ Leaf Analyzer requires images captured with the Leaf Analyzer calibration patter
 To try your own images, first capture them with the pattern (see next section). See [Capturing images with the Leaf Analyzer pattern](#13-capture-images-with-the-leaf-analyzer-pattern) 
 
 ### 1.3. Capture images with the Leaf Analyzer pattern
-The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word template for custom sizes. PDFs were generated in Inkscape for high precision.
+The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word template for custom sizes. PDFs were generated in Inkscape for high precision. At the top of each PDF (to the right of the logo), you’ll see labels like 120×120–15 mm, which follow the format pattern width × pattern height – AprilTag side length. Enter these values directly in Settings → Pattern (Fig. 2b).
 
 <ul>
   <li>Print PDFs at 100% scale on a standard office printer.</li>
@@ -48,7 +48,7 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word
     <td align="center"><img src="Docs/Images/Pattern_tab.png" alt="Pattern dimensions setting" width=300 height=350></td>
   </tr>
 </table>
-<p align="center"><em>Figure 2. (a) Pattern specs. (b) Pattern tab on the Settings panel.</em></p>
+<p align="center"><em>Figure 2. (a) Pattern specifications. (b) Pattern tab on the Settings panel.</em></p>
 
 
 
@@ -79,6 +79,7 @@ The default settings work in most cases. In the scenarios below, you may wish to
 #### 1.6.1 Adjust the min leaf area threshold
 
 Leaf Analyzer applies a minimum leaf area threshold to speed up processing and suppress background noise (e.g., dirt). By default, this threshold is 5% of the largest leaf area in the image. If some small leaves are not segmented because they are much smaller than the largest leaf (Fig. 3b), lower the threshold to include them (e.g., 1%; Fig. 3c).
+
 Where: Settings → Advanced → Min leaf area.
 
 <table>
@@ -93,6 +94,7 @@ Where: Settings → Advanced → Min leaf area.
 
 #### 1.6.2 Toggle Fill holes
 By default, Leaf Analyzer performs hole filling during post-processing to improve object completeness. This could end up with undesired results (Fig. 4b). If so, disable the option to preserve internal holes (Fig. 4c).
+
 Where: Settings → Advanced → Fill holes (check/uncheck).
 
 <table>
@@ -108,6 +110,7 @@ Where: Settings → Advanced → Fill holes (check/uncheck).
 #### 1.6.3 Enable Perspective correction
 
 Perspective correction is off by default. If images were captured at a skewed angle (not normal to the pattern plane), enabling this option can improve geometric accuracy (Fig. 5c).
+
 Where: Settings → Advanced → Perspective correction.
 
 <table>
