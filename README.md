@@ -1,9 +1,17 @@
-# Leaf_Analyzer
+# Leaf Analyzer
 Leaf Analyzer is an open-source GUI tool for automated measurement of leaf traits—area, dimensions, perimeter, count, and percent damage (e.g., herbivory/disease). The application is implemented in MATLAB and distributed as a standalone program (no MATLAB license required). Installers are available for Windows, Linux, and macOS.
 
 A detailed description is available in our article in Plant Phenomics:
 [Leaf Analyzer: A Fully Automated and Open-Source Tool for High-Throughput Leaf Trait Measurement](https://authors.elsevier.com/sd/article/S2643-6515(25)00151-7).
 
+## Latest updates
+
+**2026/02/13** -- :fire::fire: Leaf Analyzer v2.6.0: New Green Leaf Index (GLI) Trait Measurement + Per-Leaf Exports to Spreadsheet.
+
+**2025/12/12** -- :fire::fire: Leaf Analyzer v2.5.0: First public release
+
+
+- A new suite of improved model checkpoints (denoted as **HQ-SAM 2**, beta-version) are released.
 
 <p align="center">
   <img src="Docs/Images/UI_Screenshot.png" alt="Leaf Analyzer UI" width="700">
