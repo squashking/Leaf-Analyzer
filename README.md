@@ -1,5 +1,5 @@
 # Leaf Analyzer
-Leaf Analyzer is an open-source GUI tool for automated measurement of leaf traits—area, dimensions, perimeter, count, and percent damage (e.g., herbivory/disease). The application is implemented in MATLAB and distributed as a standalone program (no MATLAB license required). Installers are available for Windows, Linux, and macOS.
+Leaf Analyzer is an open-source GUI tool for automated measurement of leaf traits—area, dimensions, perimeter, count, green index, and percent damage (e.g., herbivory/disease). The application is implemented in MATLAB and distributed as a standalone program (no MATLAB license required). Installers are available for Windows, Linux, and macOS.
 
 A detailed description is available in our article in Plant Phenomics:
 [Leaf Analyzer: A Fully Automated and Open-Source Tool for High-Throughput Leaf Trait Measurement](https://authors.elsevier.com/sd/article/S2643-6515(25)00151-7).
@@ -37,7 +37,7 @@ Control-click the unzipped file
 ### 1.2. Test Leaf Analyzer with images
 Leaf Analyzer requires images captured with the Leaf Analyzer calibration pattern. For quick testing, use the datasets in [Datasets](Datasets/). 
 
-To try your own images, first capture them with the pattern (see next section). See [Capturing images with the Leaf Analyzer pattern](#13-capture-images-with-the-leaf-analyzer-pattern) 
+To try your own images, first capture them with the pattern (see next section). See [Capture images with the Leaf Analyzer pattern](#13-capture-images-with-the-leaf-analyzer-pattern) 
 
 ### 1.3. Capture images with the Leaf Analyzer pattern
 The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word template for custom sizes. PDFs were generated in Inkscape for high precision. At the top of each PDF (to the right of the logo), you’ll see labels like 120×120–15 mm, which follow the format *pattern width* × *pattern height* – *AprilTag side length*. Enter these values directly in Settings → Pattern (Fig. 2b).
@@ -48,7 +48,9 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word
   <li>In Leaf Analyzer, enter the exact pattern dimensions in Settings → Pattern.</li>
 </ul>
 
-> **Note:** Leaves must be put within the Region of Interest (Fig2.a). Any objects beyond the cut-off line will be disregarded.
+> **Note:** 
+1). Leaves must be placed within the Region of Interest (Fig2.a). Any objects beyond the cut-off line will be disregarded.
+2). f you add text labels to the image, place them only in the reserved text region (Fig. 2a). The text must also be within 3 cm of the top border of the ROI. Currently, the text recognition model supports digits (0–9), letters (a–z, A–Z), and three special characters: dash(-), underscore(_), and dot(.). 
 
 <table>
   <tr>
@@ -64,7 +66,7 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word
 
 If your images don’t include the Leaf Analyzer calibration pattern but have a **white (or light) background** and an **independent scale reference** (e.g., a ruler), you can follow the steps:
 
-   - Overlay the four **AprilTags** from the Leaf Analyzer pattern onto the image (maintaining correct geometry).
+   - Overlay the four [AprilTags](Patterns/) from the Leaf Analyzer pattern onto the image (maintaining correct geometry).
    - Run Leaf Analyzer to measure traits in **pixels**. (Settings → Output → Dimension unit → pixel.)
    - Convert to metric units using a known-length object in the image (by multiplying a constant factor in the output spreadsheet file).
 
@@ -80,11 +82,11 @@ Leaf morphological trait measurement demo
  [youtube link](https://youtu.be/od3qdbkg00o)
 
 
-### 1.6. Tweak default settings (if needed)
+## 2. Tweak default settings (if needed)
 
 The default settings work in most cases. In the scenarios below, you may wish to adjust them.
 
-#### 1.6.1 Adjust the min leaf area threshold
+### 2.1 Adjust the min leaf area threshold
 
 Leaf Analyzer applies a minimum leaf area threshold to speed up processing and suppress background noise (e.g., dirt). By default, this threshold is 5% of the largest leaf area in the image. If some small leaves are not segmented because they are much smaller than the largest leaf (Fig. 3b), lower the threshold to include them (e.g., 1%; Fig. 3c).
 
@@ -100,7 +102,7 @@ Where: Settings → Advanced → Min leaf area.
 </table>
 <p align="left"><em>Figure 3. (a) Original RGB image with large size variation among leaves. (b) Two very small leaves are missed with the default Min leaf area threshold. (c) All leaves are segmented after lowering the threshold to 1%. (d) Location of the Min leaf area control in the Settings panel.</em></p>
 
-#### 1.6.2 Toggle Fill holes
+### 2.2 Toggle Fill holes
 By default, Leaf Analyzer performs hole filling during post-processing to improve object completeness. This could end up with undesired results (Fig. 4b). If so, disable the option to preserve internal holes (Fig. 4c).
 
 Where: Settings → Advanced → Fill holes (check/uncheck).
@@ -115,7 +117,7 @@ Where: Settings → Advanced → Fill holes (check/uncheck).
 </table>
 <p align="left"><em>Figure 4. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
 
-#### 1.6.3 Enable Perspective correction
+### 2.3 Enable Perspective correction
 
 Perspective correction is off by default. If images were captured at a skewed angle (not normal to the pattern plane), enabling this option can improve geometric accuracy (Fig. 5c).
 
