@@ -30,7 +30,12 @@ Download the latest release from [Releases](https://github.com/squashking/Leaf-A
 ➢ ./run_Leaf_analyzer.sh /usr/local/MATLAB/MATLAB_Runtime/R2025a/</td></tr>
   <tr><td>Mac OS</td><td>First unzip LeafAnalyzerInstaller2.5_Mac.zip, and then 
 Control-click the unzipped file
-(LeafAnalyzerInstaller2.5_Mac.app) → Open</td><td>Open via Applications → Leaf Analyzer (or Spotlight).</td></tr>
+(LeafAnalyzerInstaller2.5_Mac.app) → Open</td>
+<td>Open via Applications → APPN → Leaf Analyzer (or Spotlight). <br>
+If your processor is ARM64 (common for devices manufactured after 2020), open a terminal, and run: <br>
+arch -x86_64 open /Applications/APPN/LeafAnalyzer/application/LeafAnalyzer.app
+</td>
+</tr>
 </table>
 
 
