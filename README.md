@@ -6,6 +6,8 @@ A detailed description is available in our article in Plant Phenomics:
 
 ## Latest updates
 
+**2026/05/05** -- :fire::fire: Leaf Analyzer online pattern generator is available, [click to customize your own pattern](https://techlauncher-leafanalyzer.github.io/Leaf-Analyzer-Pattern-Generation/).
+
 **2026/02/13** -- :fire::fire: Leaf Analyzer v2.6.0: New Green Leaf Index (GLI) Trait Measurement + Per-Leaf Exports to Spreadsheet.
 
 **2025/12/12** -- :fire::fire: Leaf Analyzer v2.5.0: First public release
@@ -45,11 +47,11 @@ Leaf Analyzer requires images captured with the Leaf Analyzer calibration patter
 To try your own images, first capture them with the pattern (see next section). See [Capture images with the Leaf Analyzer pattern](#13-capture-images-with-the-leaf-analyzer-pattern) 
 
 ### 1.3. Capture images with the Leaf Analyzer pattern
-The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1) and a Word template for custom sizes. PDFs were generated in Inkscape for high precision. At the top of each PDF (to the right of the logo), you’ll see labels like 120×120–15 mm, which follow the format *pattern width* × *pattern height* – *AprilTag side length*. Enter these values directly in Settings → Pattern (Fig. 2b).
+The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were generated in Inkscape for high precision. You can also customize your own pattern with our [online pattern generator](https://techlauncher-leafanalyzer.github.io/Leaf-Analyzer-Pattern-Generation/) (Please make sure to print the generated PDF file at 100% scale for accuracy). At the top of each PDF (to the right of the logo), you’ll see labels like 120×120–15 mm, which follow the format *pattern width* × *pattern height* – *AprilTag side length*. Enter these values directly in Settings → Pattern (Fig. 2b).
 
 <ul>
   <li>Print PDFs at 100% scale on a standard office printer.</li>
-  <li>If you customize the pattern (Word template), ensure printed dimensions are accurate.</li>
+  <li>Check the pattern dimensions with a ruler after it's printed.</li>
   <li>In Leaf Analyzer, enter the exact pattern dimensions in Settings → Pattern.</li>
 </ul>
 
