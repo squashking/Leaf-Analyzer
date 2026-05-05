@@ -45,7 +45,7 @@ Leaf Analyzer requires images captured with the Leaf Analyzer calibration patter
 To try your own images, first capture them with the pattern (see next section). See [Capture images with the Leaf Analyzer pattern](#13-capture-images-with-the-leaf-analyzer-pattern) 
 
 ### 1.3. Capture images with the Leaf Analyzer pattern
-The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were generated in Inkscape for high precision. You can customize your own pattern to a suitable size using our [online pattern generator](https://techlauncher-leafanalyzer.github.io/Leaf-Analyzer-Pattern-Generation/) (Please make sure to print the generated PDF file at 100% scale for accuracy). At the top of each PDF (to the right of the logo), you’ll see labels like 120×120–15 mm, which follow the format *pattern width* × *pattern height* – *AprilTag side length*. Enter these values directly in Settings → Pattern (Fig. 2b).
+The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were generated in Inkscape for high precision. You can also customize your own pattern to a suitable size using our [online pattern generator](https://techlauncher-leafanalyzer.github.io/Leaf-Analyzer-Pattern-Generation/) (Please make sure to print the generated PDF file at 100% scale for accuracy). At the top of each PDF (to the right of the logo), you’ll see labels like 120×120–15 mm, which follow the format *pattern width* × *pattern height* – *AprilTag side length*. Enter these values directly in Settings → Pattern (Fig. 2b).
 
 <ul>
   <li>Print PDFs at 100% scale on a standard office printer.</li>
