@@ -81,10 +81,10 @@ If your images don’t include the Leaf Analyzer calibration pattern but have a 
 
 ### 1.5. Video Tutorials
 Leaf morphological trait measurement demo
- [youtube link](https://youtu.be/liucWnU8v48)
+ [Youtube link](https://youtu.be/liucWnU8v48) or [Youku link](https://v.youku.com/v_show/id_XNjQ5NzA1Mzg1Ng==.html)
 
  Leaf damage assessment demo
- [youtube link](https://youtu.be/od3qdbkg00o)
+ [Youtube link](https://youtu.be/od3qdbkg00o) or [Youku link](https://v.youku.com/v_show/id_XNjQ4ODk2MDUxMg==.html)
 
 
 ## 2. Tweak default settings (if needed)
