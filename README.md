@@ -4,6 +4,7 @@ Leaf Analyzer is an open-source GUI tool for automated measurement of leaf trait
 A detailed description is available in our article in Plant Phenomics:
 [Leaf Analyzer: A Fully Automated and Open-Source Tool for High-Throughput Leaf Trait Measurement](https://authors.elsevier.com/sd/article/S2643-6515(25)00151-7).
 
+
 ## Latest updates
 
 **2026/05/05** -- :fire::fire: Leaf Analyzer online pattern generator is available, [click to customize your own pattern](https://techlauncher-leafanalyzer.github.io/Leaf-Analyzer-Pattern-Generation/).
@@ -12,11 +13,45 @@ A detailed description is available in our article in Plant Phenomics:
 
 **2025/12/12** -- :fire::fire: Leaf Analyzer v2.5.0: First public release
 
+## Example applications
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="Docs/Images/IMG_3812.JPG" width="180"><br>
+      (a)
+    </td>
+    <td align="center">
+      <img src="Docs/Images/IMG_3812_areas.png" width="180"><br>
+      (b)
+    </td>
+    <td align="center">
+      <img src="Docs/Images/IMG_3812_perimeters.png" width="180"><br>
+      (c)
+    </td>
+    <td align="center">
+      <img src="Docs/Images/IMG_3812_dimensions.png" width="180"><br>
+      (d)
+    </td>
+    <td align="center">
+      <img src="Docs/Images/IMG_3812_gli.png" width="180"><br>
+      (e)
+    </td>
+  </tr>
+</table>
+<em align="left">Figure 1. Leaf morphological trait measurement: (a) Original RGB image; (b) Per-leaf area; (c) Per-leaf perimeter; (d) Per-leaf dimensions; (e) Per-leaf green index.</em><br>
+
+<p >
+  <img align="center" src="Docs/Images/More_applications.png" alt="Leaf Analyzer UI" width="700">
+  <br>
+  <em align="left">Figure 2. More applications of Leaf Analyzer. (a-b): Petri dish plant leaf area measurement. (c-d): Petri dish seed germination monitoring, (e-f): 48-well plate hydroponic plant leaf area measurement. (g-h): nondestructive leaf area and dimensions measurement. (i-j): Silhouette leaf area measurement. (k-l): Seed counting. (m): An example root phenotyping pipeline using Leaf Analyzer.</em>
+</p>
+
 
 <p align="center">
   <img src="Docs/Images/UI_Screenshot.png" alt="Leaf Analyzer UI" width="700">
   <br>
-  <em>Figure 1. Leaf Analyzer UI.</em>
+  <em>Figure 3. Leaf Analyzer UI.</em>
 </p>
 
 ## 1. Getting started
@@ -63,7 +98,7 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were
     <td align="center"><img src="Docs/Images/Pattern_tab.png" alt="Pattern dimensions setting" width=300 height=350></td>
   </tr>
 </table>
-<p align="center"><em>Figure 2. (a) Pattern specifications. (b) Pattern tab on the Settings panel.</em></p>
+<p align="center"><em>Figure 4. (a) Pattern specifications. (b) Pattern tab on the Settings panel.</em></p>
 
 
 
@@ -105,7 +140,7 @@ Where: Settings → Advanced → Min leaf area.
     <td align="center"><img src="Docs/Images/Settings_min_area.png" alt="Set min area threshold" width=400 height=250></td>
   </tr>
 </table>
-<p align="left"><em>Figure 3. (a) Original RGB image with large size variation among leaves. (b) Two very small leaves are missed with the default Min leaf area threshold. (c) All leaves are segmented after lowering the threshold to 1%. (d) Location of the Min leaf area control in the Settings panel.</em></p>
+<p align="left"><em>Figure 5. (a) Original RGB image with large size variation among leaves. (b) Two very small leaves are missed with the default Min leaf area threshold. (c) All leaves are segmented after lowering the threshold to 1%. (d) Location of the Min leaf area control in the Settings panel.</em></p>
 
 ### 2.2 Toggle Fill holes
 By default, Leaf Analyzer performs hole filling during post-processing to improve object completeness. This could end up with undesired results (Fig. 4b). If so, disable the option to preserve internal holes (Fig. 4c).
@@ -120,7 +155,7 @@ Where: Settings → Advanced → Fill holes (check/uncheck).
     <td align="center"><img src="Docs/Images/Setting_fill_holes.png" alt="Fill holes button" width=400 height=250></td>
   </tr>
 </table>
-<p align="left"><em>Figure 4. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
+<p align="left"><em>Figure 6. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
 
 ### 2.3 Enable Perspective correction
 
@@ -136,4 +171,4 @@ Where: Settings → Advanced → Perspective correction.
     <td align="center"><img src="Docs/Images/Perspective_correction.png" alt="Fill holes button" width=400 height=250></td>
   </tr>
 </table>
-<p align="left"><em>Figure 5. (a) Image captured at an oblique angle. (b) Segmentation using default settings (perspective correction off). (c) Segmentation with Perspective correction enabled. (d) Location of the Perspective correction control in the Settings panel. </em></p>
+<p align="left"><em>Figure 7. (a) Image captured at an oblique angle. (b) Segmentation using default settings (perspective correction off). (c) Segmentation with Perspective correction enabled. (d) Location of the Perspective correction control in the Settings panel. </em></p>
