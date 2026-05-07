@@ -172,3 +172,25 @@ Where: Settings → Advanced → Perspective correction.
   </tr>
 </table>
 <p align="left"><em>Figure 7. (a) Image captured at an oblique angle. (b) Segmentation using default settings (perspective correction off). (c) Segmentation with Perspective correction enabled. (d) Location of the Perspective correction control in the Settings panel. </em></p>
+
+Citation
+---------------
+If you find Leaf Analyzer useful in your research, please star :star: this repository and consider citing :pencil::
+```
+@article{LeafAnalyzer,
+title = {Leaf Analyzer: A fully automated and open-source tool for high-throughput leaf trait measurement},
+journal = {Plant Phenomics},
+volume = {8},
+number = {1},
+pages = {100145},
+year = {2026},
+issn = {2643-6515},
+doi = {https://doi.org/10.1016/j.plaphe.2025.100145},
+url = {https://www.sciencedirect.com/science/article/pii/S2643651525001517},
+author = {Tao Hu and Richard Poire and Danielle Way}
+}  
+```
+Or
+```
+Tao Hu, Richard Poire, Danielle Way, Leaf Analyzer: A fully automated and open-source tool for high-throughput leaf trait measurement, Plant Phenomics, Volume 8, Issue 1, 2026, 100145, ISSN 2643-6515, https://doi.org/10.1016/j.plaphe.2025.100145. (https://www.sciencedirect.com/science/article/pii/S2643651525001517)
+```
