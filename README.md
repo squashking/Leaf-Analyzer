@@ -1,5 +1,5 @@
 <h1>
-  <img src="Docs/Images/logo.png" alt="Leaf Analyzer logo" height="64" style="vertical-align: middle;"> 
+  <img src="Docs/Images/logo.png" alt="Leaf Analyzer logo" height="90" style="vertical-align: middle;"> 
 </h1>
 
 
@@ -71,68 +71,68 @@ A detailed description is available in our article in Plant Phenomics:
   <tr>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_20230811_165626_237_RGB_masked.png"  width="100%"><br>
-      (a)
+      (f)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_20230811_165741_510_masked_RGB.png"  width="100%"><br>
-      (b)
+      (g)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_20230817_142312_435_RGB_masked.png"  width="100%"><br>
-      (c)
+      (h)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_20230817_142836_789_RGB_masked.png"  width="100%"><br>
-      (d)
+      (i)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_20230817_143923_801_RGB_masked.png"  width="100%"><br>
-      (e)
+      (j)
     </td>
   </tr>
 
   <tr>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_5173.jpeg"  width="100%"><br>
-      (a)
+      (k)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_5176.jpeg"  width="100%"><br>
-      (b)
+      (l)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_5180.jpeg"  width="100%"><br>
-      (c)
+      (m)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_5193.jpeg"  width="100%"><br>
-      (d)
+      (n)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_5196.jpeg"  width="100%"><br>
-      (e)
+      (o)
     </td>
   </tr>
   <tr>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_5173_masked_RGB.png"  width="100%"><br>
-      (a)
+      (p)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_5176_masked_RGB.png"  width="100%"><br>
-      (b)
+      (q)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_5180_masked_RGB.png"  width="100%"><br>
-      (c)
+      (r)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_5193_masked_RGB.png"  width="100%"><br>
-      (d)
+      (s)
     </td>
     <td align="center"  width="20%">
       <img src="Docs/Images/Non-destructive/IMG_5196_masked_RGB.png"  width="100%"><br>
-      (e)
+      (t)
     </td>
   </tr>
 </table>
