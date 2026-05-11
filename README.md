@@ -17,41 +17,134 @@ A detailed description is available in our article in Plant Phenomics:
 
 <table>
   <tr>
-    <td align="center">
-      <img src="Docs/Images/IMG_3812.JPG" width="180"><br>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/IMG_3812.JPG"  width="100%"><br>
       (a)
     </td>
-    <td align="center">
-      <img src="Docs/Images/IMG_3812_areas.png" width="180"><br>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/IMG_3812_areas.png"  width="100%"><br>
       (b)
     </td>
-    <td align="center">
-      <img src="Docs/Images/IMG_3812_perimeters.png" width="180"><br>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/IMG_3812_perimeters.png"  width="100%"><br>
       (c)
     </td>
-    <td align="center">
-      <img src="Docs/Images/IMG_3812_dimensions.png" width="180"><br>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/IMG_3812_dimensions.png"  width="100%"><br>
       (d)
     </td>
-    <td align="center">
-      <img src="Docs/Images/IMG_3812_gli.png" width="180"><br>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/IMG_3812_gli.png"  width="100%"><br>
       (e)
     </td>
   </tr>
 </table>
-<em align="left">Figure 1. Leaf morphological trait measurement: (a) Original RGB image; (b) Per-leaf area; (c) Per-leaf perimeter; (d) Per-leaf dimensions; (e) Per-leaf green index.</em><br>
+<em align="left">Figure 1. Destructive leaf morphological trait measurement: (a) Original RGB image; (b) Per-leaf area; (c) Per-leaf perimeter; (d) Per-leaf dimensions; (e) Per-leaf green index.</em><br>
+
+<table>
+  <tr>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_20230811_165626_237.jpg"  width="100%"><br>
+      (a)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_20230811_165741_510.jpg"  width="100%"><br>
+      (b)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_20230817_142312_435.jpg"  width="100%"><br>
+      (c)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_20230817_142836_789.jpg"  width="100%"><br>
+      (d)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_20230817_143923_801.jpg"  width="100%"><br>
+      (e)
+    </td>
+  </tr>
+  <tr>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_20230811_165626_237_RGB_masked.png"  width="100%"><br>
+      (a)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_20230811_165741_510_masked_RGB.png"  width="100%"><br>
+      (b)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_20230817_142312_435_RGB_masked.png"  width="100%"><br>
+      (c)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_20230817_142836_789_RGB_masked.png"  width="100%"><br>
+      (d)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_20230817_143923_801_RGB_masked.png"  width="100%"><br>
+      (e)
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_5173.jpeg"  width="100%"><br>
+      (a)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_5176.jpeg"  width="100%"><br>
+      (b)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_5180.jpeg"  width="100%"><br>
+      (c)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_5193.jpeg"  width="100%"><br>
+      (d)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_5196.jpeg"  width="100%"><br>
+      (e)
+    </td>
+  </tr>
+  <tr>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_5173_masked_RGB.png"  width="100%"><br>
+      (a)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_5176_masked_RGB.png"  width="100%"><br>
+      (b)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_5180_masked_RGB.png"  width="100%"><br>
+      (c)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_5193_masked_RGB.png"  width="100%"><br>
+      (d)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Non-destructive/IMG_5196_masked_RGB.png"  width="100%"><br>
+      (e)
+    </td>
+  </tr>
+</table>
+<em align="left">Figure 2. Non-destructive leaf area measurement in action. First row (a-e): original images captured with a pattern board. Second row(m-o): leaf segmentation results corresponding to first row images. Third row(k-o): original images taken with a pattern board (with plastic cover). Fourth row(p-t): leaf segmentation results corresponding to third row images.</em><br>
 
 <p >
   <img align="center" src="Docs/Images/More_applications.png" alt="Leaf Analyzer UI" width="700">
   <br>
-  <em align="left">Figure 2. More applications of Leaf Analyzer. (a-b): Petri dish plant leaf area measurement. (c-d): Petri dish seed germination monitoring, (e-f): 48-well plate hydroponic plant leaf area measurement. (g-h): nondestructive leaf area and dimensions measurement. (i-j): Silhouette leaf area measurement. (k-l): Seed counting. (m): An example root phenotyping pipeline using Leaf Analyzer.</em>
+  <em align="left">Figure 3. More applications of Leaf Analyzer. (a-b): Petri dish plant leaf area measurement. (c-d): Petri dish seed germination monitoring, (e-f): 48-well plate hydroponic plant leaf area measurement. (g-h): nondestructive leaf area and dimensions measurement. (i-j): Silhouette leaf area measurement. (k-l): Seed counting. (m): An example root phenotyping pipeline using Leaf Analyzer.</em>
 </p>
 
 
 <p align="center">
   <img src="Docs/Images/UI_Screenshot.png" alt="Leaf Analyzer UI" width="700">
   <br>
-  <em>Figure 3. Leaf Analyzer UI.</em>
+  <em>Figure 4. Leaf Analyzer UI.</em>
 </p>
 
 ## 1. Getting started
@@ -98,7 +191,7 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were
     <td align="center"><img src="Docs/Images/Pattern_tab.png" alt="Pattern dimensions setting" width=300 height=350></td>
   </tr>
 </table>
-<p align="center"><em>Figure 4. (a) Pattern specifications. (b) Pattern tab on the Settings panel.</em></p>
+<p align="center"><em>Figure 5. (a) Pattern specifications. (b) Pattern tab on the Settings panel.</em></p>
 
 
 
@@ -140,7 +233,7 @@ Where: Settings → Advanced → Min leaf area.
     <td align="center"><img src="Docs/Images/Settings_min_area.png" alt="Set min area threshold" width=400 height=250></td>
   </tr>
 </table>
-<p align="left"><em>Figure 5. (a) Original RGB image with large size variation among leaves. (b) Two very small leaves are missed with the default Min leaf area threshold. (c) All leaves are segmented after lowering the threshold to 1%. (d) Location of the Min leaf area control in the Settings panel.</em></p>
+<p align="left"><em>Figure 6. (a) Original RGB image with large size variation among leaves. (b) Two very small leaves are missed with the default Min leaf area threshold. (c) All leaves are segmented after lowering the threshold to 1%. (d) Location of the Min leaf area control in the Settings panel.</em></p>
 
 ### 2.2 Toggle Fill holes
 By default, Leaf Analyzer performs hole filling during post-processing to improve object completeness. This could end up with undesired results (Fig. 4b). If so, disable the option to preserve internal holes (Fig. 4c).
@@ -155,9 +248,43 @@ Where: Settings → Advanced → Fill holes (check/uncheck).
     <td align="center"><img src="Docs/Images/Setting_fill_holes.png" alt="Fill holes button" width=400 height=250></td>
   </tr>
 </table>
-<p align="left"><em>Figure 6. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
+<p align="left"><em>Figure 7. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
 
-### 2.3 Enable Perspective correction
+### 2.3 Incorporate additional features for segmentation
+The proposed LBS feature works well for leaf segmentation in most cases. However, in some challenging situations, more features may need to be added to improve the segmentation. For example, when leaves have strong reflection, you may need to incorporate texture features; when dark leaves are imaged under uneven lighting, you can add the Dark Green Color
+Index (DGCI) feature.
+
+Where: Settings → Clustering → check/uncheck additional features.
+
+<table>
+  <tr>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/IMG_5407.jpeg"  width="100%"><br>
+      (a)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/IMG_5407_mask.png"  width="100%"><br>
+      (b)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/IMG_5407_mask_DGCI.png"  width="100%"><br>
+      (c)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/IMG_5407_mask_DGCI_LoG.png"  width="100%"><br>
+      (d)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Additional_features.png"  width="100%"><br>
+      (e)
+    </td>
+  </tr>
+</table>
+<em align="left">Figure 8. Dark leaves under uneven lighting — (a) input image; (b) LBS segmentation binary mask with loss of peripheral leaf area; (c) LBS+DGCI segmentation binary mask; (d) LBS+DGCI+LoG segmentation binary mask, with further enhanced boundary completeness; red boxes indicate segmentation errors. (e) Location of the additional features in the Settings panel. </em><br>
+
+
+
+### 2.4 Enable Perspective correction
 
 Perspective correction is off by default. If images were captured at a skewed angle (not normal to the pattern plane), enabling this option can improve geometric accuracy (Fig. 5c).
 
@@ -171,7 +298,7 @@ Where: Settings → Advanced → Perspective correction.
     <td align="center"><img src="Docs/Images/Perspective_correction.png" alt="Fill holes button" width=400 height=250></td>
   </tr>
 </table>
-<p align="left"><em>Figure 7. (a) Image captured at an oblique angle. (b) Segmentation using default settings (perspective correction off). (c) Segmentation with Perspective correction enabled. (d) Location of the Perspective correction control in the Settings panel. </em></p>
+<p align="left"><em>Figure 9. (a) Image captured at an oblique angle. (b) Segmentation using default settings (perspective correction off). (c) Segmentation with Perspective correction enabled. (d) Location of the Perspective correction control in the Settings panel. </em></p>
 
 Citation
 ---------------
