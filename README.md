@@ -186,8 +186,8 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were
 </ul>
 
 > **Note:** 
-1). Leaves must be placed within the Region of Interest (Fig2.a). Any objects beyond the cut-off line will be disregarded.
-2). If you add text labels to the image, place them only in the reserved text region (Fig. 2a). The text must also be within 3 cm of the top border of the ROI. Currently, the text recognition model supports digits (0–9), letters (a–z, A–Z), and three special characters: dash(-), underscore(_), and dot(.). 
+1). Leaves must be placed within the Region of Interest (Fig. 5a). Any objects beyond the cut-off line will be disregarded.
+2). If you add text labels to the image, place them only in the reserved text region (Fig. 5a). The text must also be within 3 cm of the top border of the ROI. Currently, the text recognition model supports digits (0–9), letters (a–z, A–Z), and three special characters: dash(-), underscore(_), and dot(.). 
 
 <table>
   <tr>
