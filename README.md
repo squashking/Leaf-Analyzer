@@ -11,6 +11,8 @@ A detailed description is available in our article in Plant Phenomics:
 
 ## Latest updates
 
+**2026/05/19** -- :fire::fire: Leaf Analyzer online pattern overlay tool is available, [for images taken without our pattern, see [Sec. 1.4](#14-if-your-images-were-taken-without-the-leaf-lnalyzer-pattern)](https://techlauncher-leafanalyzer.github.io/AprilTag-Overlay-Tool/).
+
 **2026/05/05** -- :fire::fire: Leaf Analyzer online pattern generator is available, [click to customize your own pattern](https://techlauncher-leafanalyzer.github.io/Leaf-Analyzer-Pattern-Generation/).
 
 **2026/02/13** -- :fire::fire: Leaf Analyzer v2.6.0: New Green Leaf Index (GLI) Trait Measurement + Per-Leaf Exports to Spreadsheet.
@@ -203,7 +205,7 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were
 
 If your images don’t include the Leaf Analyzer calibration pattern but have a **white (or light) background** and an **independent scale reference** (e.g., a ruler), you can follow the steps:
 
-   - Overlay the four [AprilTags](Patterns/) from the Leaf Analyzer pattern onto the image (maintaining correct geometry).
+   - Overlay the Leaf Analyzer pattern onto the image using our online tool (https://techlauncher-leafanalyzer.github.io/AprilTag-Overlay-Tool/).
    - Run Leaf Analyzer to measure traits in **pixels**. (Settings → Output → Dimension unit → pixel.)
    - Convert to metric units using a known-length object in the image (by multiplying a constant factor in the output spreadsheet file).
 
