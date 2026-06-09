@@ -71,7 +71,7 @@ A detailed description is available in our article in Plant Phenomics:
     </td>
   </tr>
 </table>
-<em align="left">Figure 2. Non-destructive leaf morphological trait measurement for Arabidopsis grown in pots: (a) Original RGB image of Arabidopsis grown in a tray; (b) Leaf segmentation results; (c) Original RGB image of Arabidopsis grown in a pot; (d) Watershed leaf segmentation; (e) Per-leaf area.</em><br>
+<em align="left">Figure 2. Non-destructive leaf morphological trait measurement for Arabidopsis grown in pots (see Sec. 2.4 for more details): (a) Original RGB image of Arabidopsis grown in a tray; (b) Leaf segmentation results; (c) Original RGB image of Arabidopsis grown in a pot; (d) Watershed leaf segmentation; (e) Per-leaf area.</em><br>
 
 <table>
   <tr>
@@ -334,7 +334,7 @@ Where: Settings → Advanced → Perspective correction.
 
 ### 2.4 Switch to Thresholding method for segmentation
 
-If the default **Clustering** method does not produce the desired segmentation results, you can try the **Thresholding** method, which applies HSV-based thresholding. The default thresholds are tuned for green colors, so if your leaves are green, this method should work out of the box (Fig. 11). If leaves are touching and you need per-leaf traits, enable Watershed in the settings and adjust the watershed minima threshold if needed (Fig. 11c). 
+The default automatic **Clustering** method assumes that the ROI contains only the objects of interest against a white or light background. If the ROI includes unwanted objects or non-background colors (e.g., soil, pots/containers, or other clutter), you should switch to the **Thresholding** method, which applies HSV-based thresholding. The default thresholds are tuned for green colors, so if your leaves are green, this method should work out of the box (Fig. 11). If leaves are touching and you need per-leaf traits, enable Watershed in the settings and adjust the watershed minima threshold if needed (Fig. 11c). 
 
 Where: Settings → Advanced → Watershed.
 
@@ -349,6 +349,26 @@ Where: Settings → Advanced → Watershed.
 <p align="left"><em>Figure 11. (a) RGB image of Arabidopsis grown in a pot. (b) Location of the thresholding settings in the Settings panel. (c) Draw a polygon region of interest. (d) Per-channel histogram of the drawn region of interest. </em></p>
 
 If the default HSV thresholds do not work well, you can manually adjust the three channels (Hue, Saturation, Value) (Fig. 11). To estimate suitable value ranges for your object of interest, click **Select Region** (Fig. 11b) and draw a polygon region (Fig. 11c) to display the HSV histograms for the selected area (Fig. 11d). These histograms can guide threshold tuning for more accurate segmentation. You can also click **Save Settings** to store your thresholds for future use; next time, simply click **Load Settings** to restore the saved thresholds.
+
+**Note:** If the leaves and the Leaf Analyzer pattern are not on the same plane (e.g., a potted plant as in Fig. 11a), trait measurements should be **calibrated** by multiplying a constant factor `C`. The calibration steps are simple (see Appendix A of our paper for details):
+
+1) Place a planar calibration target (e.g., a colored geometric shape) with known true area `A_ref` on the **same plane as the plant**.  
+2) Measure its area in Leaf Analyzer to obtain `A_I,ref`.  
+3) Compute the calibration constant:  
+   `C = A_ref / A_I,ref`
+
+Once `C` is known, calibrate subsequent measurements as follows:
+
+- **Length-based traits** (e.g., length, width, perimeter):  
+  `L_C = L_I * sqrt(C)`  
+  where `L_I` is the value reported by Leaf Analyzer and `L_C` is the calibrated value.
+
+- **Area-based traits** (e.g., leaf area):  
+  `A_C = A_I * C`  
+  where `A_I` is the value reported by Leaf Analyzer and `A_C` is the calibrated value.
+
+If the relative displacement and orientation between the camera and the plant are kept fixed (e.g., using a tripod and a consistent setup), then `C` remains constant and the calibration only needs to be performed once.
+
 
 
 
