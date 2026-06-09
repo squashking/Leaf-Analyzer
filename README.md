@@ -11,7 +11,7 @@ A detailed description is available in our article in Plant Phenomics:
 
 ## Latest updates
 
-**2026/05/19** -- :fire::fire: Leaf Analyzer online pattern overlay tool is available, [for images taken without our pattern, see [Sec. 1.4](#14-if-your-images-were-taken-without-the-leaf-lnalyzer-pattern)](https://techlauncher-leafanalyzer.github.io/AprilTag-Overlay-Tool/).
+**2026/05/19** -- :fire::fire: Leaf Analyzer online pattern overlay tool is available, for images taken without our pattern, see [Sec. 1.4](#14-if-your-images-were-taken-without-the-Leaf-Analyzer-pattern)(https://techlauncher-leafanalyzer.github.io/AprilTag-Overlay-Tool/).
 
 **2026/05/05** -- :fire::fire: Leaf Analyzer online pattern generator is available, [click to customize your own pattern](https://techlauncher-leafanalyzer.github.io/Leaf-Analyzer-Pattern-Generation/).
 
@@ -46,6 +46,32 @@ A detailed description is available in our article in Plant Phenomics:
   </tr>
 </table>
 <em align="left">Figure 1. Destructive leaf morphological trait measurement: (a) Original RGB image; (b) Per-leaf area; (c) Per-leaf perimeter; (d) Per-leaf dimensions; (e) Per-leaf green index.</em><br>
+
+<table>
+  <tr>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Arabidopsis_soil.png"  width="100%"><br>
+      (a)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Arabidopsis_soil_masked_RGB.png"  width="100%"><br>
+      (b)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Arabidopsis_soil_single.png"  width="100%"><br>
+      (c)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Arabidopsis_soil_single_Watershed.png"  width="100%"><br>
+      (d)
+    </td>
+    <td align="center"  width="20%">
+      <img src="Docs/Images/Arabidopsis_soil_single_areas.png"  width="100%"><br>
+      (e)
+    </td>
+  </tr>
+</table>
+<em align="left">Figure 2. Non-destructive leaf morphological trait measurement for Arabidopsis grown in pots: (a) Original RGB image of Arabidopsis grown in a tray; (b) Leaf segmentation results; (c) Original RGB image of Arabidopsis grown in a pot; (d) Watershed leaf segmentation; (e) Per-leaf area.</em><br>
 
 <table>
   <tr>
@@ -138,19 +164,19 @@ A detailed description is available in our article in Plant Phenomics:
     </td>
   </tr>
 </table>
-<em align="left">Figure 2. Non-destructive leaf area measurement in action. First row (a-e): original images captured with a pattern board. Second row(m-o): leaf segmentation results corresponding to first row images. Third row(k-o): original images taken with a pattern board (with plastic cover). Fourth row(p-t): leaf segmentation results corresponding to third row images.</em><br>
+<em align="left">Figure 3. Non-destructive leaf area measurement in action. First row (a-e): original images captured with a pattern board. Second row(m-o): leaf segmentation results corresponding to first row images. Third row(k-o): original images taken with a pattern board (with plastic cover). Fourth row(p-t): leaf segmentation results corresponding to third row images.</em><br>
 
 <p >
   <img align="center" src="Docs/Images/More_applications.png" alt="Leaf Analyzer UI" width="700">
   <br>
-  <em align="left">Figure 3. More applications of Leaf Analyzer. (a-b): Petri dish plant leaf area measurement. (c-d): Petri dish seed germination monitoring, (e-f): 48-well plate hydroponic plant leaf area measurement. (g-h): nondestructive leaf area and dimensions measurement. (i-j): Silhouette leaf area measurement. (k-l): Seed counting. (m): An example root phenotyping pipeline using Leaf Analyzer.</em>
+  <em align="left">Figure 4. More applications of Leaf Analyzer. (a-b): Petri dish plant leaf area measurement. (c-d): Petri dish seed germination monitoring, (e-f): 48-well plate hydroponic plant leaf area measurement. (g-h): nondestructive leaf area and dimensions measurement. (i-j): Silhouette leaf area measurement. (k-l): Seed counting. (m): An example root phenotyping pipeline using Leaf Analyzer.</em>
 </p>
 
 
 <p align="center">
   <img src="Docs/Images/UI_Screenshot.png" alt="Leaf Analyzer UI" width="700">
   <br>
-  <em>Figure 4. Leaf Analyzer UI.</em>
+  <em>Figure 5. Leaf Analyzer UI.</em>
 </p>
 
 ## 1. Getting started
@@ -161,7 +187,7 @@ Download the latest release from [Releases](https://github.com/squashking/Leaf-A
   <tr><th>Operation System</th><th>Installation</th><th>Launching</th></tr>
   <tr><td>Windows</td><td>Double click: LeafAnalyzerInstaller2.5_Windows.exe</td><td>Open via Start Menu → Leaf Analyzer (or the desktop shortcut, if created).</td></tr>
   <tr><td>Linux</td><td>sudo ./ LeafAnalyzerInstaller2.5_Linux.install</td><td>➢ cd /usr/Leaf_Analyzer/application <br>
-➢ ./run_Leaf_analyzer.sh /usr/local/MATLAB/MATLAB_Runtime/R2025a/</td></tr>
+➢ ./run_Leaf_Analyzer.sh /usr/local/MATLAB/MATLAB_Runtime/R2025a/</td></tr>
   <tr><td>Mac OS</td><td>First unzip LeafAnalyzerInstaller2.5_Mac.zip, and then 
 Control-click the unzipped file
 (LeafAnalyzerInstaller2.5_Mac.app) → Open</td>
@@ -179,7 +205,7 @@ Leaf Analyzer requires images captured with the Leaf Analyzer calibration patter
 To try your own images, first capture them with the pattern (see next section). See [Capture images with the Leaf Analyzer pattern](#13-capture-images-with-the-leaf-analyzer-pattern) 
 
 ### 1.3. Capture images with the Leaf Analyzer pattern
-The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were generated in Inkscape for high precision. You can also customize your own pattern to a suitable size using our [online pattern generator](https://techlauncher-leafanalyzer.github.io/Leaf-Analyzer-Pattern-Generation/) (Please make sure to print the generated PDF file at 100% scale for accuracy). At the top of each PDF (to the right of the logo), you’ll see labels like 120×120–15 mm, which follow the format *pattern width* × *pattern height* – *AprilTag side length*. Enter these values directly in Settings → Pattern (Fig. 2b).
+The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were generated in Inkscape for high precision. You can also customize your own pattern to a suitable size using our [online pattern generator](https://techlauncher-leafanalyzer.github.io/Leaf-Analyzer-Pattern-Generation/) (Please make sure to print the generated PDF file at 100% scale for accuracy). At the top of each PDF (to the right of the logo), you’ll see labels like 120×120–15 mm, which follow the format *pattern width* × *pattern height* – *AprilTag side length*. Enter these values directly in Settings → Pattern (Fig. 6b).
 
 <ul>
   <li>Print PDFs at 100% scale on a standard office printer.</li>
@@ -188,8 +214,8 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were
 </ul>
 
 > **Note:** 
-1). Leaves must be placed within the Region of Interest (Fig. 5a). Any objects beyond the cut-off line will be disregarded.
-2). If you add text labels to the image, place them only in the reserved text region (Fig. 5a). The text must also be within 3 cm of the top border of the ROI. Currently, the text recognition model supports digits (0–9), letters (a–z, A–Z), and three special characters: dash(-), underscore(_), and dot(.). 
+1). Leaves must be placed within the Region of Interest (Fig. 6a). Any objects beyond the cut-off line will be disregarded.
+2). If you add text labels to the image, place them only in the reserved text region (Fig. 6a). The text must also be within 3 cm of the top border of the ROI. Currently, the text recognition model supports digits (0–9), letters (a–z, A–Z), and three special characters: dash(-), underscore(_), and dot(.). 
 
 <table>
   <tr>
@@ -197,11 +223,11 @@ The [Patterns](Patterns/) folder contains PDF pattern files (A4–A1). They were
     <td align="center"><img src="Docs/Images/Pattern_tab.png" alt="Pattern dimensions setting" width=300 height=350></td>
   </tr>
 </table>
-<p align="center"><em>Figure 5. (a) Pattern specifications. (b) Pattern tab on the Settings panel.</em></p>
+<p align="center"><em>Figure 6. (a) Pattern specifications. (b) Pattern tab on the Settings panel.</em></p>
 
 
 
-### 1.4 If your images were taken **without** the Leaf Analyzer pattern
+### 1.4 If your images were taken without the Leaf Analyzer pattern
 
 If your images don’t include the Leaf Analyzer calibration pattern but have a **white (or light) background** and an **independent scale reference** (e.g., a ruler), you can follow the steps:
 
@@ -227,7 +253,7 @@ The default settings work in most cases. In the scenarios below, you may wish to
 
 ### 2.1 Adjust the min leaf area threshold
 
-Leaf Analyzer applies a minimum leaf area threshold to speed up processing and suppress background noise (e.g., dirt). By default, this threshold is 5% of the largest leaf area in the image. If some small leaves are not segmented because they are much smaller than the largest leaf (Fig. 3b), lower the threshold to include them (e.g., 1%; Fig. 3c).
+Leaf Analyzer applies a minimum leaf area threshold to speed up processing and suppress background noise (e.g., dirt). By default, this threshold is 5% of the largest leaf area in the image. If some small leaves are not segmented because they are much smaller than the largest leaf (Fig. 7b), lower the threshold to include them (e.g., 1%; Fig. 7c).
 
 Where: Settings → Advanced → Min leaf area.
 
@@ -239,10 +265,10 @@ Where: Settings → Advanced → Min leaf area.
     <td align="center"><img src="Docs/Images/Settings_min_area.png" alt="Set min area threshold" width=400 height=250></td>
   </tr>
 </table>
-<p align="left"><em>Figure 6. (a) Original RGB image with large size variation among leaves. (b) Two very small leaves are missed with the default Min leaf area threshold. (c) All leaves are segmented after lowering the threshold to 1%. (d) Location of the Min leaf area control in the Settings panel.</em></p>
+<p align="left"><em>Figure 7. (a) Original RGB image with large size variation among leaves. (b) Two very small leaves are missed with the default Min leaf area threshold. (c) All leaves are segmented after lowering the threshold to 1%. (d) Location of the Min leaf area control in the Settings panel.</em></p>
 
 ### 2.2 Toggle Fill holes
-By default, Leaf Analyzer performs hole filling during post-processing to improve object completeness. This could end up with undesired results (Fig. 4b). If so, disable the option to preserve internal holes (Fig. 4c).
+By default, Leaf Analyzer performs hole filling during post-processing to improve object completeness. This could end up with undesired results (Fig. 8b). If so, disable the option to preserve internal holes (Fig. 8c).
 
 Where: Settings → Advanced → Fill holes (check/uncheck).
 
@@ -254,7 +280,7 @@ Where: Settings → Advanced → Fill holes (check/uncheck).
     <td align="center"><img src="Docs/Images/Setting_fill_holes.png" alt="Fill holes button" width=400 height=250></td>
   </tr>
 </table>
-<p align="left"><em>Figure 7. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
+<p align="left"><em>Figure 8. (a) Leaf with holes/punches. (b) With Fill holes enabled (default), holes are filled. (c) Unchecking Fill holes preserves them, yielding the desired segmentation. (d) Location of the Fill holes toggle in the Settings panel. </em></p>
 
 ### 2.3 Incorporate additional features for segmentation
 The proposed LBS feature works well for leaf segmentation in most cases. However, in some challenging situations, more features may need to be added to improve the segmentation. For example, when leaves have strong reflection, you may need to incorporate texture features; when dark leaves are imaged under uneven lighting, you can add the Dark Green Color
@@ -286,13 +312,13 @@ Where: Settings → Clustering → check/uncheck additional features.
     </td>
   </tr>
 </table>
-<em align="left">Figure 8. Dark leaves under uneven lighting — (a) input image; (b) LBS segmentation binary mask with loss of peripheral leaf area; (c) LBS+DGCI segmentation binary mask; (d) LBS+DGCI+LoG segmentation binary mask, with further enhanced boundary completeness; red boxes indicate segmentation errors. (e) Location of the additional features in the Settings panel. </em><br>
+<em align="left">Figure 9. Dark leaves under uneven lighting — (a) input image; (b) LBS segmentation binary mask with loss of peripheral leaf area; (c) LBS+DGCI segmentation binary mask; (d) LBS+DGCI+LoG segmentation binary mask, with further enhanced boundary completeness; red boxes indicate segmentation errors. (e) Location of the additional features in the Settings panel. </em><br>
 
 
 
 ### 2.4 Enable Perspective correction
 
-Perspective correction is off by default. If images were captured at a skewed angle (not normal to the pattern plane), enabling this option can improve geometric accuracy (Fig. 5c).
+Perspective correction is off by default. If images were captured at a skewed angle (not normal to the pattern plane), enabling this option can improve geometric accuracy (Fig. 10c).
 
 Where: Settings → Advanced → Perspective correction.
 
@@ -304,7 +330,27 @@ Where: Settings → Advanced → Perspective correction.
     <td align="center"><img src="Docs/Images/Perspective_correction.png" alt="Fill holes button" width=400 height=250></td>
   </tr>
 </table>
-<p align="left"><em>Figure 9. (a) Image captured at an oblique angle. (b) Segmentation using default settings (perspective correction off). (c) Segmentation with Perspective correction enabled. (d) Location of the Perspective correction control in the Settings panel. </em></p>
+<p align="left"><em>Figure 10. (a) Image captured at an oblique angle. (b) Segmentation using default settings (perspective correction off). (c) Segmentation with Perspective correction enabled. (d) Location of the Perspective correction control in the Settings panel. </em></p>
+
+### 2.4 Switch to Thresholding method for segmentation
+
+If the default **Clustering** method does not produce the desired segmentation results, you can try the **Thresholding** method, which applies HSV-based thresholding. The default thresholds are tuned for green colors, so if your leaves are green, this method should work out of the box (Fig. 11). If leaves are touching and you need per-leaf traits, enable Watershed in the settings and adjust the watershed minima threshold if needed (Fig. 11c). 
+
+Where: Settings → Advanced → Watershed.
+
+<table>
+  <tr>
+    <td align="center"><img src="Docs/Images/Arabidopsis_soil_single.png" alt="Arabidopsis grown in pot" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Settings_Thresholding.png" alt="Thresholding Settings" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/Select_region.png" alt="Settings - watershed" width=400 height=250></td>
+    <td align="center"><img src="Docs/Images/HSV-histogram.png" alt="Arabidopsis per leaf area" width=400 height=250></td>    
+  </tr>
+</table>
+<p align="left"><em>Figure 11. (a) RGB image of Arabidopsis grown in a pot. (b) Location of the thresholding settings in the Settings panel. (c) Draw a polygon region of interest. (d) Per-channel histogram of the drawn region of interest. </em></p>
+
+If the default HSV thresholds do not work well, you can manually adjust the three channels (Hue, Saturation, Value) (Fig. 11). To estimate suitable value ranges for your object of interest, click **Select Region** (Fig. 11b) and draw a polygon region (Fig. 11c) to display the HSV histograms for the selected area (Fig. 11d). These histograms can guide threshold tuning for more accurate segmentation. You can also click **Save Settings** to store your thresholds for future use; next time, simply click **Load Settings** to restore the saved thresholds.
+
+
 
 Citation
 ---------------
