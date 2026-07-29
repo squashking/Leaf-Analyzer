@@ -8,6 +8,8 @@
 A detailed description is available in our article in Plant Phenomics:
 [Leaf Analyzer: A Fully Automated and Open-Source Tool for High-Throughput Leaf Trait Measurement](https://authors.elsevier.com/sd/article/S2643-6515(25)00151-7).
 
+If you have any issues using the software, please contact tao.hu@anu.edu.au.
+
 
 ## Latest updates
 
@@ -192,7 +194,7 @@ Download the latest release from [Releases](https://github.com/squashking/Leaf-A
 Control-click the unzipped file
 (LeafAnalyzerInstaller2.5_Mac.app) → Open</td>
 <td>Open via Applications → APPN → Leaf Analyzer (or Spotlight). <br>
-If your processor is ARM64 (common for devices manufactured after 2020), open a terminal, and run: <br>
+<span style="color:red">If your processor is ARM64 (common for devices manufactured after 2020)</span>, open a terminal, and run: <br>
 arch -x86_64 open /Applications/APPN/LeafAnalyzer/application/LeafAnalyzer.app
 </td>
 </tr>
