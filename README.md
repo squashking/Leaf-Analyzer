@@ -8,7 +8,7 @@
 A detailed description is available in our article in Plant Phenomics:
 [Leaf Analyzer: A Fully Automated and Open-Source Tool for High-Throughput Leaf Trait Measurement](https://authors.elsevier.com/sd/article/S2643-6515(25)00151-7).
 
-If you have any issues using the software, please contact tao.hu@anu.edu.au.
+If you have any issues using the software, please feel free to raise them in the [Issues page](https://github.com/squashking/Leaf-Analyzer/issues) or report them to tao.hu@anu.edu.au.
 
 
 ## Latest updates
