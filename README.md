@@ -13,11 +13,13 @@ If you have any issues using the software, please feel free to raise them in the
 
 ## Latest updates
 
+**2026/09/18** -- :fire::fire: Leaf Analyzer v2.7.0: [New pattern support and better MacOs experience](https://github.com/squashking/Leaf-Analyzer/releases/tag/v2.7.0).
+
 **2026/05/19** -- :fire::fire: Leaf Analyzer online pattern overlay tool is available, for images taken without our pattern, see [Sec. 1.4](#14-if-your-images-were-taken-without-the-Leaf-Analyzer-pattern)(https://techlauncher-leafanalyzer.github.io/AprilTag-Overlay-Tool/).
 
 **2026/05/05** -- :fire::fire: Leaf Analyzer online pattern generator is available, [click to customize your own pattern](https://techlauncher-leafanalyzer.github.io/Leaf-Analyzer-Pattern-Generation/).
 
-**2026/02/13** -- :fire::fire: Leaf Analyzer v2.6.0: New Green Leaf Index (GLI) Trait Measurement + Per-Leaf Exports to Spreadsheet.
+**2026/02/13** -- :fire::fire: Leaf Analyzer v2.6.0: [New Green Leaf Index (GLI) Trait Measurement + Per-Leaf Exports to Spreadsheet](https://github.com/squashking/Leaf-Analyzer/releases/tag/v2.6.0).
 
 **2025/12/12** -- :fire::fire: Leaf Analyzer v2.5.0: First public release
 
@@ -187,15 +189,13 @@ Download the latest release from [Releases](https://github.com/squashking/Leaf-A
 
 <table border="1" cellspacing="0" cellpadding="6">
   <tr><th>Operation System</th><th>Installation</th><th>Launching</th></tr>
-  <tr><td>Windows</td><td>Double click: LeafAnalyzerInstaller2.5_Windows.exe</td><td>Open via Start Menu → Leaf Analyzer (or the desktop shortcut, if created).</td></tr>
-  <tr><td>Linux</td><td>sudo ./ LeafAnalyzerInstaller2.5_Linux.install</td><td>➢ cd /usr/Leaf_Analyzer/application <br>
+  <tr><td>Windows</td><td>Double click: LeafAnalyzerInstaller2.7_Windows.exe</td><td>Open via Start Menu → Leaf Analyzer (or the desktop shortcut, if created).</td></tr>
+  <tr><td>Linux</td><td>sudo ./ LeafAnalyzerInstaller2.7_Linux.install</td><td>➢ cd /usr/Leaf_Analyzer/application <br>
 ➢ ./run_Leaf_Analyzer.sh /usr/local/MATLAB/MATLAB_Runtime/R2025a/</td></tr>
-  <tr><td>Mac OS</td><td>First unzip LeafAnalyzerInstaller2.5_Mac.zip, and then 
+  <tr><td>Mac OS</td><td>First download the right Mac version according to your processor (Intel or Apple Silicon). Unzip LeafAnalyzerInstaller2.7_Mac.zip, and then 
 Control-click the unzipped file
 (LeafAnalyzerInstaller2.5_Mac.app) → Open</td>
 <td>Open via Applications → APPN → Leaf Analyzer (or Spotlight). <br>
-<span style="color:red">If your processor is ARM64 (common for devices manufactured after 2020)</span>, open a terminal, and run: <br>
-arch -x86_64 open /Applications/APPN/LeafAnalyzer/application/LeafAnalyzer.app
 </td>
 </tr>
 </table>
