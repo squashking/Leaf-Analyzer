@@ -192,9 +192,12 @@ Download the latest release from [Releases](https://github.com/squashking/Leaf-A
   <tr><td>Windows</td><td>Double click: LeafAnalyzerInstaller2.7_Windows.exe</td><td>Open via Start Menu → Leaf Analyzer (or the desktop shortcut, if created).</td></tr>
   <tr><td>Linux</td><td>sudo ./ LeafAnalyzerInstaller2.7_Linux.install</td><td>➢ cd /usr/Leaf_Analyzer/application <br>
 ➢ ./run_Leaf_Analyzer.sh /usr/local/MATLAB/MATLAB_Runtime/R2025a/</td></tr>
-  <tr><td>Mac OS</td><td>First download the right Mac version according to your processor (Intel or Apple Silicon). Unzip LeafAnalyzerInstaller2.7_Mac.zip, and then 
-Control-click the unzipped file
-(LeafAnalyzerInstaller2.5_Mac.app) → Open</td>
+  <tr><td>Mac OS</td><td>1. First download the right Mac version according to your processor (Intel or Apple Silicon). 
+  <br>2. Unzip LeafAnalyzerInstaller2.7_Mac.zip. 
+  <br>3. Run the following command from the direcotry of the unzipped installer:
+  xattr -d com.apple.quarantine LeafAnalyzerMacOS_AppleSilicon_Installer2.7_web.app
+<br>4. Then Control-click the unzipped installer file
+(LeafAnalyzerInstaller2.7_Mac.app) → Open</td>
 <td>Open via Applications → APPN → Leaf Analyzer (or Spotlight). <br>
 </td>
 </tr>
