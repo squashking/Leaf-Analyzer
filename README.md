@@ -203,6 +203,7 @@ Download the latest release from [Releases](https://github.com/squashking/Leaf-A
 </tr>
 </table>
 
+Alternatively, if you have MATLAB R2025 installed, you can run Leaf Analyzer directly from the source code. Simply double-click Leaf_analyzer.mlapp to launch the application. Before running Leaf Analyzer, make sure the following MATLAB toolboxes are installed: Bioinformatics Toolbox, Computer Vision Toolbox, Deep Learning Toolbox, Image Processing Toolbox, Statistics and Machine Learning Toolbox.    
 
 ### 1.2. Test Leaf Analyzer with images
 Leaf Analyzer requires images captured with the Leaf Analyzer calibration pattern. For quick testing, use the datasets in [Datasets](Datasets/). 
